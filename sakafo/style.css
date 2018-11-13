@@ -22,7 +22,7 @@
 
 .imagerav{
 	float: right;
-	margin-top: -550px;
+	margin-top: -380px;
 	padding-right: 250px;
 
 
@@ -46,7 +46,5 @@ border-radius: 300px;
 body{
 
 	font-family: comic sans ms;
+	background-color: #34AEFA;
 }
-.tab1 td, tr {
-    background-color: #4CAF50;
-color: white;}
