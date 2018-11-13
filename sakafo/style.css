@@ -1,0 +1,52 @@
+.case{
+
+
+
+}
+ table,td,tr,th{
+
+	border: 3px solid green;
+	width: 500px;
+	height: 30px;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+.glob{
+
+	margin-left: 150px;
+}
+.temps{
+
+	margin-left: 60px;
+} 
+
+.imagerav{
+	float: right;
+	margin-top: -550px;
+	padding-right: 250px;
+
+
+	}
+
+	.image1{
+		border-radius: 300px;
+	}
+	
+.image2{
+
+width:250px;
+height: 250px;
+border-radius: 300px;
+}
+
+.imageaku{
+
+	float: right;
+}
+body{
+
+	font-family: comic sans ms;
+}
+.tab1 td, tr {
+    background-color: #4CAF50;
+color: white;}
