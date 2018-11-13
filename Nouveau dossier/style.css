@@ -1,0 +1,26 @@
+.case{
+
+
+
+}
+ table,td,tr,th{
+
+	border: 3px solid green;
+	width: 500px;
+	height: 30px;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+.glob{
+
+	margin-left: 150px;
+}
+.temps{
+
+	margin-left: 60px;
+} 
+
+.imagerav{
+	float: right;
+	margin-top: -550px;
+}
