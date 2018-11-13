@@ -1,0 +1,50 @@
+object SakafoForm: TSakafoForm
+  Left = 234
+  Height = 519
+  Top = 113
+  Width = 963
+  Caption = 'Sakafo 1.0'
+  ClientHeight = 519
+  ClientWidth = 963
+  Color = clOlive
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 322
+    Top = 80
+    Width = 544
+    AutoFillColumns = True
+    RowCount = 11
+    TabOrder = 0
+    ColWidths = (
+      64
+      119
+      119
+      119
+      119
+    )
+  end
+  object Daty: TStaticText
+    Left = 232
+    Height = 17
+    Top = 8
+    Width = 65
+    Caption = 'Daty'
+    TabOrder = 1
+  end
+  object SakafoMenu: TEdit
+    Left = 144
+    Height = 23
+    Top = 40
+    Width = 231
+    TabOrder = 2
+  end
+  object sary: TImage
+    Left = 584
+    Height = 291
+    Top = 8
+    Width = 360
+  end
+end
