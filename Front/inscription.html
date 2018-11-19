@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Inscription</title>
+<link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+<h1> INSCRIPTION </h1>
+<form id="Formulaire">
+<span class="Indentite"><mark class="Obligatoire">*</mark>Sexe :</span>
+<label><input name="sex" type="radio" value="H"/>Homme</label>
+<label><input name="sex" type="radio" value="F"/>Femme</label> <span class="tooltip"></span>
+<span class="tooltip">Il faut choisir un sexe</span> <br />
+
+<label class="Indentite" for="Nom">Nom :</label> <input name="Nom" id="Nom" type="text" />
+<span class="tooltip">Un nom ne peut pas faire moins de 2 caractères</span> <br />
+
+<label class="Indentite" for="Prenoms">Prénoms :</label> <input name="Prenoms" id="Prenoms" type="text" />
+<span class="tooltip">Un prénom ne peut pas faire moins de 2 caractères</span> <br />
+
+<label class="Indentite" for="DateDeNaissance">Date de naissance :</label> <input name="DateDeNaissance" id="DateDeNaissance" type="date" /> <br />
+
+<label class="Indentite" for="email">e-mail :</label> <input name="email" id="email" type="email" /> <br />
+<label class="Indentite" for="Tel"><mark class="Obligatoire">*</mark>Tél :</label> <input name="Tel" id="Tel" type="text" />
+<span class="tooltip">Veuillez saisir un noméro de téléphone correct</span> <br />
+
+<label class="Indentite" for="Pseudo"><mark class="Obligatoire">*</mark>Pseudo :</label> <input name="Pseudo" id="Pseudo" type="text" />
+<span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères</span> <br />
+
+<label class="Indentite" for="ModDePasse1"><mark class="Obligatoire">*</mark>Mot de passe :</label> <input name="ModDePasse1" id="ModDePasse1" type="password" />
+<span class="tooltip" ></span> <br />
+
+<label class="Indentite" for="ModDePasse2"><mark class="Obligatoire">*</mark>Confirmation :</label> <input name="ModDePasse2" id="ModDePasse2" type="password" />
+<span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span> <br /> <br />
+
+<span class="Indentite"></span>
+<label><input name="news" type="checkbox" id="news"/> Je désire recevoir la newsletter chaque mois.</label> <br /> <br />
+
+<span class="Indentite"></span>
+<input type="submit" value="M'inscrire"/> <input type="reset" value="Réinitialiser le formulaire" />
+</form>
+<span id="Valide"> Le formulaire a été bien rempli</span>
+<div id="Connexion">
+<h1> CONNEXION </h1>
+<label class="Indentite" for="Pseudo">Pseudo :</label> <input name="Pseudo" id="Pseudo" type="text" /> <br>
+<label class="Indentite" for="ModDePasseTest">Mot de passe :</label> <input name="ModDePasseTest" id="ModDePasseTest" type="password" /> <br> <br>
+<span class="Indentite"></span>
+<input type="submit" value="Se connecter" id="SeconnecterInfo" />
+</div>
+<!-- Vérification d'inforamtions -->
+<input type="button" id="VerificationDInformation" value="Vérifier mes informations"> <br>
+<input type="button" id="HideInformation" value="Cacher mes informations"> 
+
+<div id="InformationStockée">
+<h1 class="TitreInformationStockée"> INFORMATIONS STOCKÉES </h1>
+
+<span class="Indentite">Sexe :</span>
+<label><input name="sexSaved" type="radio" value="Homme"/>Homme</label>
+<label><input name="sexSaved" type="radio" value="Femme"/>Femme</label> <span class="tooltip"></span>
+<span class="tooltip">Il faut choisir un sexe</span> <br />
+
+<label class="Indentite" for="NameSaved">Nom :</label> <input name="NameSaved" id="NameSaved" type="text" />
+<span class="tooltip">Un nom ne peut pas faire moins de 2 caractères</span> <br />
+
+<label class="Indentite" for="PrenomsSaved">Prénoms :</label> <input name="PrenomsSaved" id="PrenomsSaved" type="text" />
+<span class="tooltip">Un prénom ne peut pas faire moins de 2 caractères</span> <br />
+
+<label class="Indentite" for="DateDeNaissanceSaved">Date de naissance :</label> <input name="DateDeNaissanceSaved" id="DateDeNaissanceSaved" type="date" /> <br />
+
+<label class="Indentite" for="emailSaved">e-mail :</label> <input name="emailSaved" id="emailSaved" type="email" /> <br />
+<label class="Indentite" for="TelSaved">Tél :</label> <input name="TelSaved" id="TelSaved" type="text" /> <br />
+
+<label class="Indentite" for="PseudoSaved">Pseudo :</label> <input name="PseudoSaved" id="PseudoSaved" type="text" />
+<span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères</span> <br />
+
+<label class="Indentite" for="ModDePasse1Saved">Mot de passe :</label> <input name="ModDePasse1Saved" id="ModDePasse1Saved" type="password" />
+<span class="tooltip" ></span> <br />
+
+<label class="Indentite" for="ModDePasse2Saved">Confirmation :</label> <input name="ModDePasse2Saved" id="ModDePasse2Saved" type="password" />
+<span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span> <br /> <br />
+
+<span class="Indentite"></span>
+<label><input name="newsSaved" type="checkbox" id="newsSaved"/> Je désire recevoir la newsletter chaque mois.</label> <br /> <br />
+
+</div>
+
+<script src="inscription.js"> </script>
+</body

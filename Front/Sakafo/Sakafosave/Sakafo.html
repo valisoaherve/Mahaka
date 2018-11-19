@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+<html>
+<head> <title> Sakafo 1.0</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Sakafo.css">
+</head>
+<body>
+<h1> Sakafo 1.0 </h1>
+<span> VENDREDI 16/11/2018 </span> <br><br>
+<span id="TitreMenu"> HEN'OMBY SY RAVI-TOTO </span> <br><br>
+<span> INGREDIENTS </span>
+<Table class="TableMenu">
+<tr> <th> N°</th> <th>Désignation</th> <th> Quantité </th> <th> Unité </th> <th> Prix en Ar </th> <th> Calorie</th> <th> Vitamine</th> <th> Commentaire</th></tr>
+<tr> <td>1</td> <td> Hen'omby</td> <td>1/4 </td> <td> kg </td> <td> 3 000 </td> <td> </td> <td> </td> <td> Nofony </td></tr>
+<tr> <td>2</td> <td> Ravi-toto</td> <td> 1/8 </td> <td> kg</td> <td> 500</td> <td> </td> <td> </td> <td>Melemy tsara </td></tr>
+<tr> <td>3</td> <td>Tongolo </td> <td>3 </td> <td> isa</td> <td> 200</td> <td> </td> <td> </td> <td> Tongolo oignon </td></tr>
+<tr> <td>4</td> <td> Voatabia</td> <td> 2</td> <td> isa</td> <td>200 </td> <td> </td> <td> </td> <td> </td></tr>
+<tr> <td>5</td> <td> Sira</td> <td> 1</td> <td> sotro </td> <td> </td> <td> </td> <td> </td> <td> Sotron'olon-dehibe</td></tr>
+</Table>
+<img src="images/Sakafo1.jpg" alt="Sakafo1">
+<div id="Choix">
+<br> Nombre de personnes : <input type="number" name="NombrePersonnes" value="1">
+<br> Moyen Financier : <input type="number" name="MoyenFinancier" value="2500"> Ariary <br><br>
+Critères / régime alimentaire <br>
+<Select id="regime">
+<optgroup label="Régime alimentaire">
+<option value=0>Standard</option>
+<option value=1>Végétarien</option>
+<option value=2>Musulman</option>
+<option value=3>Adventiste</option>
+<option value=4>Diabetique</option>
+<option value=5>Régime alimentaire reduit</option>
+<option value=6>Hanin-kotrana</option>
+<option value=7>Soupe</option>
+</optgroup>
+<optgroup label="Cuisine">
+<option value=8>Malagasy</option>
+<option value=9>Chinoise</option>
+<option value=10>Indienne</option>
+<option value=11>Européenne</option>
+<option value=12>Mexicaine</option>
+</optgroup>
+</Select>
+</div>
+<br> VOTRE AVIS NOUS INTERESSE <br>
+<textarea name="commentaire" rows="5" cols="27" id="commentaire"> </textarea> <br>
+<input type="button" value="Envoyer" id="Envoyer"> <br>
+<br> <input type="button" value="Capturer une image" id="capture">
+<br> Sélectionner une image  <input type="file" accept="image/*" id="sary">
+<!-- <script>
+const FileInput = document.getElementById('sary');
+sary.addEventListener('change',)
+</script> -->
+<br> <video id="player" controls autoplay width="14%"></video>
+
+<!-- Les code ci-dessous sont pour test -->
+<aside id="TestFonctionnalite"> 
+<br><input id="text" type="text">
+<script>
+	var text= document.getElementById('text');
+	text.disabled = false;
+</script> <br> <br>
+
+<label><input type="radio" name="check" value="1" /> Case n°1</label><br />
+<label><input type="radio" name="check" value="2" /> Case n°2</label><br />
+<label><input type="radio" name="check" value="3" /> Case n°3</label><br />
+<label><input type="radio" name="check" value="4" /> Case n°4</label>
+<br /><br />
+<input type="button" value="Afficher la case cochée" onclick="check();" />
+<script>
+ function check() {
+  var inputs = document.getElementsByName('check'),
+	inputsLength = inputs.length;
+	for(var i=0;i<inputsLength;i++) {
+		if(inputs[i].type == 'radio' && inputs[i].checked) {
+	 alert('La case cochée est la N°'+ inputs[i].value);
+	  }
+	}
+ }
+</script>
+
+
+</aside>
+
+<script src="Sakafo.js"> </script>
+</body>
+</html>

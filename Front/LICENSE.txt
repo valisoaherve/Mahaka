@@ -1,0 +1,2 @@
+Mahaka 1.0
+Licence GNU GPL v3

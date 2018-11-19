@@ -1,0 +1,103 @@
+.Indentite {
+display: inline-block;
+margin-right: 5px;
+padding: 3px 0px;
+width: 140px;
+text-align: right;
+}
+input {
+padding: 2px;
+border: 1px solid #CCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+input:focus {
+border-color: rgba(82, 168, 236, 0.75);
+-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+.correct {
+border-color: rgba(68, 191, 68, 0.75);
+}
+.correct:focus {
+border-color: rgba(68, 191, 68, 0.75);
+-moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+.incorrect {
+border-color: rgba(191, 68, 68, 0.75);
+}
+.incorrect:focus {
+border-color: rgba(191, 68, 68, 0.75);
+-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+.tooltip {
+display: none;
+margin-left: 20px;
+padding: 2px 4px;
+border: 1px solid #555;
+background-color: #CCC;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color : red;
+}
+
+h1 {
+	margin-left : 110px;
+}
+#Valide {
+	 display : none; 
+}
+
+#Connexion {
+	position : absolute;
+	right : 150px;
+	top : 10px;
+	border : 5px solid olive;
+	border-radius : 10px;
+	padding-right : 100px;
+	padding-bottom : 10px;
+}
+
+#InformationStockée {
+	position : absolute;
+	right : 50px;
+	bottom : 10px;
+	border : 5px solid olive;
+	border-radius : 10px;
+	padding-right : 100px;
+	padding-bottom : 10px;
+	width : 500px;
+	height : 410px;
+	display : none;
+}
+.TitreInformationStockée { /* h1 de la 2ème div : InformationStockée */
+	margin-left : 65px;
+}
+
+#VerificationDInformation {
+	position : absolute;
+	left : 40px;
+	bottom : 200px;
+	height : 50px;
+	width : 200px;
+}
+
+#HideInformation {
+	position : absolute;
+	left : 250px;
+	bottom : 200px;
+	height : 50px;
+	width : 200px;
+}
+
+.Obligatoire {
+	background-color : white;
+	color : red;
+}

@@ -1,0 +1,47 @@
+<! DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suggestion</title>
+	<link rel="stylesheet" href="suggestion.css">
+</head>
+<body>
+<h1>SUGGESTION</h1>
+<br> <video id="player" controls autoplay width="20%"></video> <br>
+<input type="button" value="Capturer"><br><br>
+Commentaire : <br>
+<textarea name="commentaire" rows="5" cols="27" id="commentaire"> </textarea> <br>
+<input type="submit" value="Suggerer"> <br>
+<div class="Capture">
+<input type="file" accept="image/*" id="file-input" capture>
+
+<script>
+  const fileInput = document.getElementById('file-input');
+
+  fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+</script>
+
+<img id="output">
+<script>
+  const output = document.getElementById('output');
+
+  function doSomethingWithFiles(fileList) {
+    let file = null;
+
+    for (let i = 0; i < fileList.length; i++) {
+      if (fileList[i].type.match(/^image\//)) {
+        file = fileList[i];
+        break;
+      }
+    }
+
+    if (file !== null) {
+      output.src = URL.createObjectURL(file);
+    }
+  }
+</script>
+
+</div>
+<script src="suggestion.js"></script>
+</body>
+</html>
