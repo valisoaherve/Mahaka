@@ -3,7 +3,7 @@
 	"short_name" : "ToDo",
 	"lang": "fr",
 	"start_url": "/",
-	"display": "standlone",
+	"display": "standalone",
 	"theme_color": "#009688",
 	"icons": [
 		{
