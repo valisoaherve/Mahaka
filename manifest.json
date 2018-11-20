@@ -1,0 +1,16 @@
+{
+	"name": "Todo List",
+	"short_name" : "ToDo",
+	"lang": "fr",
+	"start_url": "/",
+	"display": "standlone",
+	"theme_color": "#009688",
+	"icons": [
+		{
+			"src": "todo_logo.jpg",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+
+}

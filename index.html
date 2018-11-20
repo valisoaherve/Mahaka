@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Progressive Web App </title>
+<meta name="viewport" content="width=device-width", initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<script>
+if('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('/sw.js').then(
+			function(registration) {
+			// Registration was successful
+			console.log('ServiceWorker registration successful with scope:', registration.scope)
+			},
+			function(err) {
+			// Registration failed :(
+			console.log('ServiceWorker registration failed',err)
+			
+			})
+		})
+}
+</script>
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" size="512x512" href="todo-logo.jpg">
+
+<meta charset="utf-8">
+<meta name="theme-color" content="#009688">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<!--link rel="stylesheet" href="normalize.min.css" media="all"-->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" media="all">
+<link rel="stylesheet" href="style.min.css" media="all">
+<script src="app.min.js" defer></script>
+</head>
+<body>
+<!--h1> Pogressive Web App </h1 --> 
+
+<form class="form">
+<input type="text" placeholder="Entrer une TODO">
+<button type="submit">+</button>
+</form>
+
+<ul class="list-items"></ul>
+
+
+</body>
+</html>
