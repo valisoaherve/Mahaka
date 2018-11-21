@@ -1,6 +1,6 @@
 #player {
-	width: 	670px;
-height: 400px;
+	width: 	100%; /*670px;*/
+height: 100%;/* 400px; */
 }
 
 #capture {
