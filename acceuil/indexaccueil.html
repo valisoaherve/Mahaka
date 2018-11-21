@@ -5,7 +5,31 @@
   <meta charset ="utf-8"/>
   <title>projet maahaka</title>
   <link rel="stylesheet" type="text/css" href="styleacceuil.css">
-  <meta name="viewport"  content="width=device-width"/>
+  <meta name="viewport"  content="width=device-width"/ initial-scale="1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	
+	<script>
+if('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('/sw.js').then(
+			function(registration) {
+			// Registration was successful
+			console.log('ServiceWorker registration successful with scope:', registration.scope)
+			},
+			function(err) {
+			// Registration failed :(
+			console.log('ServiceWorker registration failed',err)
+			
+			})
+		})
+}
+</script>
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" size="512x512" href="todo_logo.jpg">
+<link rel="stylesheet" href="style.min.css" media="all">
+	
+<script src="app.min.js" defer></script>
 
 </head>
 <body>
