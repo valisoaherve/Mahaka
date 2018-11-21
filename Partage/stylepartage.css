@@ -6,6 +6,7 @@ height: 400px;
 #capture {
 	position : absolute;
 	bottom : 50px;
+	left : 100px;
 }
 
 body,html{
