@@ -47,14 +47,15 @@
 <div class="camera">
 <video id="player" controls autoplay></video>
 	</div>
-	<div id="butcap"><button class="but3">Capturer</button></div>
+	<div id="divcap"><button class="but3">Capturer</button></div>
+	<canvas id="canvas" width=320 height=240></canvas> <br>
 
 
  <script>
 	const player = document.getElementById('player');
   const canvas = document.getElementById('canvas');
   const context = canvas.getContext('2d');
-  const captureButton = document.getElementById('butcap');
+  const captureButton = document.getElementById('but3');
 	const StopStreaming = document.getElementById('StopStreaming');
 	
 	const constraints = {
