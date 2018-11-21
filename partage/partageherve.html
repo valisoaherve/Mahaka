@@ -9,7 +9,8 @@
 <video id="player" controls autoplay></video>
 <button id="capture">Capture</button> 
 <canvas id="Sary" width=320 height=240></canvas> <br>
-<button id="StopStreaming">Stop Camera</button>
+<button id="StopStreaming">Stop Camera</button> <br>
+<button id="Save">Save</button>
 <script>
   const player = document.getElementById('player');
   const canvas = document.getElementById('Sary');
@@ -24,10 +25,7 @@
 
   captureButton.addEventListener('click', () => {
     // Draw the video frame to the canvas.
-    context.drawImage(player, 0, 0, canvas.width, canvas.height);
-		
-		// Stop all video streams.
-   // player.srcObject.getVideoTracks().forEach(track => track.stop());
+    context.drawImage(player, 0, 0, canvas.width, canvas.height)
   });
 
   // Attach the video stream to the video element and autoplay.
