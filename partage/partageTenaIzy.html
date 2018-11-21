@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset ="utf-8"/>
+  <title>projet maahaka</title>
+  <link rel="stylesheet" type="text/css" href="stylepartage.css">
+  <meta name="viewport"  content="width=device-width"/ initial-scale="1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	
+	<link rel="manifest" href="../manifest.json">
+	<link rel="icon" type="image/png" size="512x512" href="../todo_logo.jpg">
+	<link rel="stylesheet" href="../style.min.css" media="all">
+	
+<script src="../app.min.js" defer></script>
+
+<script src="pwa.js"></script>
+</head>
+<body>
+	<div class="entetelogo">
+	</div>
+<div class="logosanslettre"><img src="logo.jpg" class="ima1"></div>
+	
+<div class="blockimage">
+	<form>
+	<div  class="block1">
+	</div>
+	<div  class="block2">
+	</div>
+     <div  class="block3">
+	</div>
+   </form>
+</div>
+	<form>
+   <div class="formnom">
+		<input type ="text" placeholder="Identifier le photos" class="identifinom">
+	</div>
+  </form>
+
+ <div class="commentaire">
+ <input type="text"  class="taille">
+</div>
+<div class="bouton">
+<div class="upload"><button class="but1">Upload</button></div>
+<div class="envoyer"><button class="but2">Envoyer</button></div>
+</div>
+<div class="camera">
+
+</div>
+<!--video id="player" controls autoplay></video-->
+<video id="player" controls autoplay></video>
+<button id="capture">Capture</button> 
+<canvas id="canvas" width=320 height=240></canvas> <br>
+<button id="StopStreaming">Stop Camera</button>
+<script>
+  const player = document.getElementById('player');
+  const canvas = document.getElementById('canvas');
+  const context = canvas.getContext('2d');
+  const captureButton = document.getElementById('capture');
+	const StopStreaming = document.getElementById('StopStreaming');
+
+  const constraints = {
+    video: true,
+		audio : true,
+  };
+
+  captureButton.addEventListener('click', () => {
+    // Draw the video frame to the canvas.
+    context.drawImage(player, 0, 0, canvas.width, canvas.height);
+		
+		// Stop all video streams.
+   // player.srcObject.getVideoTracks().forEach(track => track.stop());
+  });
+
+  // Attach the video stream to the video element and autoplay.
+  navigator.mediaDevices.getUserMedia(constraints)
+    .then((stream) => {
+      player.srcObject = stream;
+    });
+		
+	StopStreaming.addEventListener('click', () => {
+		// Stop all video streams.
+    player.srcObject.getVideoTracks().forEach(track => track.stop());
+  });	
+		
+</script>	
+
+
+
+</body>
+</html>
