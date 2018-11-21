@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head> <title> Progressive Web App </title>
+<meta charset="utf-8">
+<meta name="theme-color" content="#009688">
 <meta name="viewport" content="width=device-width", initial-scale="1.0">
 <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
 <script>
 if('serviceWorker' in navigator) {
 	window.addEventListener('load', function() {
@@ -20,17 +23,16 @@ if('serviceWorker' in navigator) {
 }
 </script>
 
+<!-- OK ci-dessous -->
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" size="512x512" href="todo_logo.jpg">
-
-<meta charset="utf-8">
-<meta name="theme-color" content="#009688">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> // <!-- à enlever -->
 <!--link rel="stylesheet" href="normalize.min.css" media="all"-->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" media="all"> <!-- à enlever -->
 <link rel="stylesheet" href="style.min.css" media="all">
 <script src="app.min.js" defer></script>
 </head>
+
 <body>
 <!--h1> Pogressive Web App </h1 --> 
 
